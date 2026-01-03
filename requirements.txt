@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+rapidfuzz
+sentence-transformers
+llama-cpp-python
