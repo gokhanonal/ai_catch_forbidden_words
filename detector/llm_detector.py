@@ -1,7 +1,8 @@
 from llama_cpp import Llama
 
 llm = Llama(
-    model_path="models/llama3-turkish.Q4_K_M.gguf",
+    # model_path="/Users/gokhanonal/AI/models/meta/llama3-turkish.Q4_K_M.gguf",
+    model_path="/Users/gokhanonal/AI/models/google/gemma-3-12b-it.Q4_K_M.gguf",
     n_ctx=2048,
     n_threads=6
 )
@@ -22,6 +23,6 @@ def llm_detect(text):
         Cevap:
         """
 
-    output = llm(prompt, max_tokens=5, stop=["\n"])
+    output = llm(prompt, max_tokens=100, stop=["\n"])
     answer = output["choices"][0]["text"].strip().upper()
     return answer == "EVET"

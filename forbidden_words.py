@@ -1,0 +1,27 @@
+forbidden_list = [
+    "yasadışı para kazanma",
+    "kredi kartı çalmak",
+    "dolandırıcılık",
+    "hacklemek",
+    "kumar",
+    "instagram",
+    "facebook",
+    "youtube",
+    "twitter",
+    "www",
+    "@",
+    "http",
+    "050",
+    "053",
+    ".com",
+    ".tr",
+    ".istanbul"
+    ".net",
+    ".ai",
+    ".org",
+    ".com.tr",
+    ".gov.tr",
+    "telefon no",
+    "cep telefon no",
+    "web sitesi link"
+]

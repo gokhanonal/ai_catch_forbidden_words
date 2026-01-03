@@ -3,3 +3,5 @@ uvicorn
 rapidfuzz
 sentence-transformers
 llama-cpp-python
+qdrant-client
+sentence-transformers

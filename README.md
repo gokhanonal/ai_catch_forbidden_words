@@ -55,10 +55,20 @@ forbidden_ai/
 │   └── forbidden_phrases_tr.txt
 │
 └── models/
-    └── llama3-turkish.Q4_K_M.gguf
+    └── gemma-3-12b-it.Q4_K_M.gguf
 
 
 # RUN
 ```bash
+docker run -p 6333:6333 qdrant/qdrant
 uvicorn app:app --host 0.0.0.0 --port 8000
 ```
+
+# SAVE FORBIDDEN WORDS TO QDRANTDB
+```bash
+python save_forbidden_words.py
+```
+change forbidden words list via forbidden_words.py
+
+# ACCESSING QDRANT DASHBOARD
+go: http://localhost:6333/dashboard
